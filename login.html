@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NOHU ORGANİK</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/allResponsive.css">   
+<link rel="stylesheet" type="text/css" href="styles/slider.css">   
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="icon" type="image/png" href="images/nohu.png">
+</head>
+
+<body style="background-color: rgb(223, 249, 249);">
+<div class="super_container">
+  <style>
+		.logo_image {
+			width: 50px;
+			height: auto;
+			margin-right: 10px;
+		}
+
+		.main_nav_container {
+			background-color: white !important;
+			/* Siyah arka planı beyaza zorlar */
+		}
+	</style>
+<!-- BÜTÜN SAYFALARA GEREKLİİİİİİ-->
+	<!-- YÖNETİM PANELİ -->
+	<header class="header trans_300" style="height: 0;">
+		<div class="main_nav_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-right">
+						<div class="logo_container">
+							<a href="index.html" style="color:black; display: flex; align-items: center;">
+								<img src="images/nohu.png" alt="NOHU Logo" class="logo_image">
+								NOHU<span>ORGANİK</span>
+							</a>
+						</div>
+						<nav class="navbar">
+							<ul class="navbar_menu" style="margin-top: -15px;">
+								<li><a href="index.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">ANASAYFA</a></li>
+								<li><a href="meyvee.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">AlIŞVERİŞ</a></li>
+								<li><a href="contact.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">İLETİŞİM</a></li>
+								<li><a href="hakkımızda.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">HAKKIMIZDA</a></li> 
+							</ul>
+							<ul class="navbar_user" style="margin-top: -15px;">
+								<li><a href="#"><i class="fa fa-search" style="color:black" aria-hidden="true"></i></a></li>
+								<li><a href="login.html"><i class="fa fa-user" style="color:black" aria-hidden="true"></i></a></li>
+								<li class="checkout">
+									<a href="card.html">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										<span id="checkout_items" class="checkout_items"></span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+<br><br><br><br><br><br><br>
+  <!-- Login Formu -->
+  <div class="container" style="max-width: 500px; margin-top: 50px;">
+    <h2 class="text-center">Giriş Yap</h2>
+    <form id="loginForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="email">E-posta:</label>
+        <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi girin" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Şifre:</label>
+        <input type="password" class="form-control" id="password" placeholder="Şifrenizi girin" required>
+      </div>
+      <a href="index.html">
+      <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+    </a>
+    </form>
+    <p class="text-center" style="margin-top: 10px;">Henüz kaydolmadınız mı? <a href="register.html">Kayıt olun</a></p>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer_nav_container">
+            <div class="cr">©2020 Tüm Hakları Saklıdır. <i class="fa fa-heart-o" aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  function validateForm() {
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    // Kullanıcı adı, e-posta ve şifre boş olmamalı
+    if (!email || !password) {
+      alert("Lütfen tüm alanları doldurun.");
+      return false;
+    }
+
+    // E-posta formatı kontrolü
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email)) {
+      alert("Geçersiz e-posta formatı. Lütfen geçerli bir e-posta adresi girin.");
+      return false;
+    }
+
+    // Form başarıyla gönderilebilir
+    alert("Başarıyla giriş yapılıyor!");
+    return true;
+  }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

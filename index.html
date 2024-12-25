@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>Anasayfa</title>
+ <meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/allResponsive.css">   
+<link rel="stylesheet" type="text/css" href="styles/slider.css">   
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="icon" type="image/png" href="images/nohu.png">
+</head>
+
+<body>
+	
+	<div class="super_container">
+		<!-- BÜTÜN SAYFALARA GEREKLİİİİİİ-->
+		<style>
+			.logo_image {
+				width: 50px;
+				height: auto;
+				margin-right: 10px;
+			}
+
+			.main_nav_container {
+				background-color: white !important;
+				/* Siyah arka planı beyaza zorlar */
+			}
+		</style>
+
+<body>
+<div class="super_container">
+<!-- BÜTÜN SAYFALARA GEREKLİİİİİİ-->
+
+	<!-- YÖNETİM PANELİ (Header Bölümü)  -->
+	<header class="header trans_300" style="height: 0;">
+		<div class="main_nav_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-right">
+						 <!-- Logo ve Navigasyon Menüsü -->
+						<div class="logo_container">
+							<a href="index.html" style="color:black; display: flex; align-items: center;">
+								<img src="images/nohu.png" alt="NOHU Logo" class="logo_image">
+								NOHU<span>ORGANİK</span>
+							</a>
+						</div>
+						<nav class="navbar">
+							<!-- Ana Menü -->
+							<ul class="navbar_menu" style="margin-top: -15px;">
+								<li><a href="index.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">ANASAYFA</a></li>
+								<li><a href="meyvee.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">AlIŞVERİŞ</a></li>
+								<li><a href="contact.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">İLETİŞİM</a></li>
+								<li><a href="hakkımızda.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">HAKKIMIZDA</a></li> 
+							</ul>
+							<!-- Kullanıcı İşlemleri -->
+							<ul class="navbar_user" style="margin-top: -15px;">
+								<li><a href="#"><i class="fa fa-search" style="color:black" aria-hidden="true"></i></a></li>
+								<li><a href="login.html"><i class="fa fa-user" style="color:black" aria-hidden="true"></i></a></li>
+								<li class="checkout">
+									<a href="card.html">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										<span id="checkout_items" class="checkout_items"></span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	
+ <!-- Slider Bölümü -->
+	<div class="main_slider" >
+		 <div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!-- İlk Slayt (Video ) -->
+					<div class="swiper-slide" style="background-image:url(images/example3.jpg)">
+						<div class ="swiper-slide">
+							<section class="showcase">
+								<div class="video-container">
+									<a href="categories.html">
+									<video src="videos/öhü.mp4" autoplay muted loop>
+									</a></video>
+								</div>
+								<div class="content">
+									<br><br>
+									<br><br><br>
+									<br><br><br><br>
+									<br><br><br><br>
+									 <!-- Tanıtım Metni -->
+								<h6 style="color:white">  <a href="index.html"style="color:white; font-size:18px; font-family:Cormorant Garamond, Georgia, serif;"><small>Üniveristemizin doğal,lezzetli ve organik ürünleri- 2020</small></a></h6>
+												<h1 style="color:white"><a href="categories.html" style="color:white; font-size: 100px ; font-family:Cormorant Garamond, Georgia, serif;">ORGANİK ÜRÜNLERİMİZ</a></h1>
+												<!-- <div class="red_button shop_now_button"><a href="#" style="color:white; font-size:20px; font-family:Cormorant Garamond, Georgia, serif;">Üye ol</a></div> --> 
+								</div>
+							</section>
+						</div>
+				</div>
+				 <!-- İkinci ve Üçüncü Slayt (Resim ) -->
+					<div class="swiper-slide" style="background-image:url(images/PATATES1.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(images/elma1.jpg)"></div>
+				
+				</div>
+				
+				<!-- Slider Kontrolleri -->
+				<div class="swiper-scrollbar"></div>
+				<div class="swiper-button-next" style="color:#03963d"></div>
+				<div class="swiper-button-prev"style="color:#fe4c50"></div>
+			</div>
+
+<!-- Swiper.js Ayarları -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 1,
+      autoplay: {
+        delay: 24000,
+        disableOnInteraction: false,
+      },
+      
+     
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+      },
+    });
+	</script>
+		</div>
+	</div>
+
+	<!-- KATEGORİLER
+	 -->
+	 <style>
+		  .swiper-slide {
+         width: 100%;
+        background-size: cover; /* Görüntülerin alanı doldurması için */
+        background-position: center; /* Görüntülerin merkezi bir şekilde hizalanması için */
+        }
+		.banner .row {
+		  display: flex;
+		  flex-wrap: wrap; /* Alt satıra geçmeye izin ver */
+		  gap: 15px; /* Sütunlar arasında boşluk oluştur */
+		  justify-content: center; /* Ortaya hizala */
+		}
+		
+		.banner .col-md-4 {
+		  flex: 1 1 calc(25% - 15px); /* Sütun genişliği ve aralığı */
+		  max-width: calc(25% - 15px); /* Maksimum genişlik */
+		  box-sizing: border-box;
+		}
+		
+		.banner_item {
+		  position: relative;
+		  background-size: cover; /* Arka plan görselini tam boyutla göster */
+		  background-position: center; /* Görselin konumunu ortala */
+		  height: 250px; /* Kartların yüksekliği */
+		  display: flex;
+		  align-items: center; /* Beyaz kutuyu dikeyde ortala */
+		  justify-content: center; /* Beyaz kutuyu yatayda ortala */
+		  border-radius: 10px; /* Köşeleri yuvarla */
+		  overflow: hidden; /* Taşmaları gizle */
+		}
+		
+		.banner_category {
+		  position: absolute; /* Beyaz kutuyu görsel üzerinde konumlandır */
+		  background-color: #fff; /* Tam beyaz arka plan */
+		  color: #000; /* Siyah yazı rengi */
+		  padding: 10px 20px; /* Yazının etrafında boşluk */
+		  text-align: center; /* Yazıyı ortala */
+		  box-sizing: border-box; /* Kutuyu düzgün hesapla */
+		  display: flex; /* Beyaz kutunun içeriğini hizalamak için flex */
+		  align-items: center; /* Yazıyı dikeyde ortala */
+		  justify-content: center; /* Yazıyı yatayda ortala */
+		  width: 100%; /* Genişliği tamamen görsele uyacak şekilde ayarla */
+		  height: auto; /* Yazının uzunluğuna göre yükseklik ayarla */
+		  min-height: 60px; /* Minimum yükseklik belirle */
+		}
+		
+		.banner_category a {
+		  text-decoration: none; /* Alt çizgiyi kaldır */
+		  color: inherit; /* Link rengi yazı rengiyle aynı olsun */
+		  font-size: 1.2rem; /* Yazı boyutunu büyüt */
+		  font-weight: bold; /* Kalın yazı */
+		  white-space: normal; /* Uzun kelimelerin taşmasını engelle */
+		  overflow-wrap: break-word; /* Uzun kelimeleri kır */
+		  line-height: 1.4; /* Yazılar arasındaki mesafeyi ayarla */
+		}
+		
+		@media (max-width: 768px) {
+		  .banner .col-md-4 {
+			flex: 1 1 calc(50% - 15px); /* Daha küçük ekranlar için iki sütun yap */
+			max-width: calc(50% - 15px);
+		  }
+		}
+		
+		@media (max-width: 480px) {
+		  .banner .col-md-4 {
+			flex: 1 1 100%; /* Çok küçük ekranlarda tek sütun yap */
+			max-width: 100%;
+		  }
+		}
+		</style>
+		
+		<div class="banner">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-md-4">
+				<div class="banner_item align-items-center" style="background-image:url(images/MEYVESEBZE.jpeg)">
+				  <div class="banner_category">
+					<a href="meyvee.html">MEYVE ve SEBZE</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="banner_item align-items-center" style="background-image:url(images/gıda1.jpg)">
+				  <div class="banner_category">
+					<a href="gıda.html">GIDA ve DOĞAL ÜRÜNLER</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="banner_item align-items-center" style="background-image:url(images/banner_3.jpg)">
+				  <div class="banner_category">
+					<a href="giyim.html">GİYİM ve AKSESUAR</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="banner_item align-items-center" style="background-image:url(images/evdekor.webp)">
+				  <div class="banner_category">
+					<a href="dekorasyon.html">EV ve DEKORASYON</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+	<!-- en çok satılanlar -->
+
+	<div class="new_arrivals">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title new_arrivals_title">
+						<h2>EN ÇOK SATILANLAR</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col text-center">
+					<div class="new_arrivals_sorting">
+						<ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">EN ÇOK SATILANLAR</li>
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".meyvee">MEYVE ve SEBZE</li>
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".gida">GIDA ve DOĞAL ÜRÜNLER</li>
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".giyim">GİYİM ve AKSESUAR</li>
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".ev">EV ve DEKORASYON</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+
+							<style>
+
+#modalImage {
+    width: 100%; /* Resimlerin genişliği modal ile uyumlu olur */
+    height: 200px; /* Resimlerin yüksekliği sabitlenir */
+    object-fit: contain; /* Resim orantısını koruyarak sığar, kesilmez */
+}
+
+
+							</style>
+						<!-- Modal -->
+						<div class="modal fade" id="productModal" tabindex="-1" role="dialog"
+						aria-labelledby="productModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="productModalLabel">Ürün Detayı</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img id="modalImage" src="" alt="" class="img-fluid">
+									<h6 id="modalName"></h6>
+									<p id="modalDescription"></p>
+									<p id="modalPrice"></p>
+									<p id="modalOldPrice"></p>
+								</div>
+								<div class="modal-footer"
+									style="display: flex; justify-content: space-between; width: 100%;">
+									<a href="card.html">
+									<button type="button" class="btn btn-primary" id="addToCartButton">Sepete
+										Ekle</button>
+									</a>
+									<button type="button" class="btn btn-secondary"
+										data-dismiss="modal">Kapat</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+					<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+					<script
+						src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+					<script>
+						// Modal açılmadan önce bilgileri dinamik olarak değiştirelim
+						$('#productModal').on('show.bs.modal', function (event) {
+							var button = $(event.relatedTarget); // modal tetikleyen öğe (ürün başlığı)
+
+							var name = button.data('name');
+							var price = button.data('price');
+							var oldPrice = button.data('old-price');
+							var image = button.data('image');
+							var description = button.data('description');
+
+							var modal = $(this);
+
+							modal.find('#modalName').text(name);
+							modal.find('#modalPrice').text(price);
+							modal.find('#modalOldPrice').text(oldPrice);
+							modal.find('#modalImage').attr('src', image);
+							modal.find('#modalDescription').text(description);
+						});
+					</script>
+						<!-- Ürün 1 -->
+						<style>
+
+							
+							.product-item:hover {
+							  transform: translateY(-5px); /* Üzerine gelindiğinde kart yukarı kayar */
+							}
+							
+							/* Ürün resminin boyutları ve yerleşimi */
+							.product_image img {
+							  width: 100%; /* Resmin genişliği kart kadar olacak */
+							  height: 200px; /* Sabit yükseklik */
+							  object-fit: cover; /* Resmin oranı korunarak kesilmesi sağlanır */
+							}
+							
+							/* Favori simgesi konumu */
+							.favorite {
+							  position: absolute;
+							  top: 10px;
+							  left: 10px;
+							  background-color: rgba(255, 255, 255, 0.7); /* Saydam arka plan */
+							  border-radius: 50%; /* Yuvarlak simge */
+							  width: 30px;
+							  height: 30px;
+							  display: flex;
+							  justify-content: center;
+							  align-items: center;
+							  cursor: pointer;
+							}
+							
+							.favorite_left {
+							  background-color: rgba(255, 0, 0, 0.6); /* Kırmızı arka plan */
+							}
+							
+
+							
+							.product_bubble_right {
+							  right: 10px;
+							  background-color: #f44336; /* Kırmızı */
+							}
+							
+							.product_bubble_left {
+							  left: 10px;
+							  background-color: #4CAF50; /* Yeşil */
+							}
+							
+							/* Ürün bilgileri */
+							.product_info {
+							  padding: 15px;
+							  text-align: center;
+							}
+							
+							.product_name {
+							  font-size: 16px;
+							  font-weight: bold;
+							  margin-bottom: 10px;
+							  color: #333;
+							  cursor: pointer;
+							  transition: color 0.3s ease;
+							}
+							
+
+							</style>
+							
+						<div class="product-item gida">
+							<div class="product discount product_filter">
+								<div class="product_image">  <!-- Ürün görseli -->
+									<img src="balimg/petekbalı.jpeg" alt="">
+								</div>
+								<div class="favorite favorite_left"></div> <!-- Favori simgesi -->
+								<!-- İndirim ve yeni etiketleri -->
+								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-40₺</span></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>Yeni</span></div>
+								 <!-- Ürün bilgisi -->
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="Petek Kır Balı 1kg" data-price="410₺"
+										data-image="balimg/petekbalı.jpeg"
+										data-description="Organik bal ürünümüz, tamamen doğal şekilde üretilmiştir.">
+										Petek Kır Balı 1kg</h6>
+									<div class="product_price">410₺<span>450₺</span></div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+		
+
+						<!-- Ürün 2 -->
+
+						<div class="product-item gida">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="bitkiçayları img/ekinezyaçayı.jpeg" alt="">
+								</div>
+								<div class="favorite"></div>
+							<!--<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>Yeni</span></div>-->
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="Ekinezya Bitki Çayı (100 Gram)" data-price="28₺"
+										data-image="bitkiçayları img/ekinezyaçayı.jpeg"
+										data-description="Doğadan toplanan katkısız ve taze bitki çayları.">
+										Ekinezya Bitki Çayı (100 Gram)</h6>
+									<div class="product_price"> 28₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 3 -->
+
+						<div class="product-item gida">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="süt img/ineksütü.jpeg" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="%100 Doğal İnek Sütü 1 Litre" data-price="20₺"
+										data-image="süt img/ineksütü.jpeg"
+										data-description="Üniversitemizin doğal çiftliklerinde üretilen katkısız ve sağlıklı inek sütü.">
+										%100 Doğal İnek Sütü 1 Litre</h6>
+									<div class="product_price">20₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 4 -->
+
+						<div class="product-item gida">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="et img/BILDIRCINETİ.webp" alt="">
+								</div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="Bıldırcın Eti (Karkas 1 Adet)" data-price="30₺"
+										data-image="et img/BILDIRCINETİ.webp"
+										data-description="Çiftliğimizde özenle yetiştirilen bıldırcın eti.">
+										Bıldırcın Eti (Karkas 1 Adet)</h6>
+									<div class="product_price">30₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 5 -->
+
+						<div class="product-item gida">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="un img/tambuğday unu.jpg" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="Tam Buğday Unu 5 Kg" data-price="80₺"
+										data-image="un img/tambuğday unu.jpg"
+										data-description="Sağlıklı ve doğal tam buğday unumuz, ev yapımı tarifler için ideal.">
+										Tam Buğday Unu 5 Kg</h6>
+									<div class="product_price">80 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 6 -->
+
+						<div class="product-item gida">
+							<div class="product discount product_filter">
+								<div class="product_image">
+									<img src="balimg/süzme bal500gr.jpeg" alt="">
+								</div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-40₺</span></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>Yeni</span></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="Süzme Bal (500 Gram)" data-price="350₺"
+									data-image="balimg/süzme bal500gr.jpeg"
+									data-description="Organik bal ürünümüz, tamamen doğal şekilde üretilmiştir.">
+									Süzme Bal (500 Gram)</h6>
+									<div class="product_price">350 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 7 -->
+
+						<div class="product-item gida">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="yumurta img/gezenavuk15.jpeg" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_info"><h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="Gezen Tavuk Sarı Eski Ana Yumurta (L 63-73 Gr Arası, Koli 15 Adet)" data-price="95₺"
+										data-image="yumurta img/gezenavuk15.jpeg"
+										data-description="Tamamen doğal ortamda beslenen tavuklarımızdan alınan kaliteli yumurtala">
+										Gezen Tavuk Sarı Eski Ana Yumurta (L 63-73 Gr Arası, Koli 15 Adet)
+										</h6>
+									<div class="product_price">95₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 8 -->
+
+						<div class="product-item meyvee">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="meyve/elma.jpeg" alt="">
+								</div>
+
+								<div class="favorite"></div>
+								<div class="product_info"><h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="" data-price="30₺"
+									data-image="meyve/elma.jpeg"
+									data-description="Bahçelerimizde özenle yetiştirilen doğal ve taze elmalar.">
+									Niğde Elması 1kg</h6>
+									<div class="product_price">30 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 9 -->
+
+						<div class="product-item ev">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="ev dekorasyon img/derihalı.jpg" alt="" style="width: 160px; height: auto;">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
+									<span>Yeni</span>
+								</div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="63*105 Cm Deri Halı" data-price="1.250₺"
+									data-image="ev dekorasyon img/derihalı.jpg"
+									data-description="63*105 cm ölçülerinde, şık ve kaliteli deri halı.">
+									63*105 Cm Deri Halı</h6>
+									<div class="product_price">1.250 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+						
+
+						<!-- Ürün 10 -->
+
+						<div class="product-item gida">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="bitkiçayları img/elmasirkesi.jpeg" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="Doğal Elma Sirkesi 1 Litre" data-price="220₺"
+										data-image="bitkiçayları img/elmasirkesi.jpeg"
+										data-description="Üniversitemizin bahçelerinden toplanan elmalardan yapılan doğal sirke.">
+										Doğal Elma Sirkesi 1 Litre</h6>
+									<div class="product_price">220₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 11 -->
+
+						<div class="product-item meyvee">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="meyve/mısır.jpeg" alt="">
+								</div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="Süt Mısırı 2'li paket" data-price="20₺"
+										data-image="meyve/mısır.jpeg"
+										data-description="Organik tarım ile üretilmiş, taptaze süt mısırlarımız.">
+										Süt Mısırı 2'li paket</h6>
+									<div class="product_price">20₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 12 -->
+
+						<div class="product-item gida">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="bitkiçayları img/elmakurusu.jpeg" alt="">
+								</div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+										data-name="Petek Kır Balı 1kg" data-price="45₺"
+										data-image="bitkiçayları img/elmakurusu.jpeg"
+										data-description="Bahçemizin doğal elmalarından üretilen sağlıklı atıştırmalık.">
+										Doğal Elma Kurusu (200 Gram)</h6>
+									<div class="product_price">45₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 13-->
+
+						<div class="product-item meyvee">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="meyve/nektari.jpeg" alt="">
+								</div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="Petek Kır Balı 1kg" data-price="40₺"
+									data-image="meyve/nektari.jpeg"
+									data-description="Bahçemizde özenle yetiştirilmiş, sulu ve tatlı nektarinler.">
+									Nektari 1kg</h6>
+									<div class="product_price">40₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 14 -->
+
+						<div class="product-item gida">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="balimg/karakovan.jpeg" alt="">
+								</div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="Petek Kır Balı 1kg" data-price="450₺"
+									data-image="balimg/karakovan.jpeg"
+									data-description="Organik bal ürünümüz, tamamen doğal şekilde üretilmiştir.">
+									Karakovan Kır Balı (1000 Gram)</h6>
+									<div class="product_price">450₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						
+						<!-- Ürün 15-->
+
+						<div class="product-item ev">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="ev dekorasyon img/kasnak1.webp" alt="" style="width: 220px; height: auto;">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="İşlemeli Kasnak" data-price="50₺"
+									data-image="ev dekorasyon img/kasnak1.webp"
+									data-description="El emeği ile yapılmış zarif işlemeli kasnak dekoru.">
+									İşlemeli Kasnak</h6>
+									<div class="product_price">50 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 16 -->
+
+						<div class="product-item ev">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="ev dekorasyon img/derihalı.jpg" alt="" style="width: 160px; height: auto;">
+								</div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
+									<span>Yeni</span>
+								</div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="80*145 Cm Deri Halı" data-price="2.500₺"
+									data-image="ev dekorasyon img/derihalı.jpg"
+									data-description="80*145 cm ölçülerinde, estetik ve dayanıklı deri halı.">
+									80*145 Cm Deri Halı</h6>
+									<div class="product_price">2.500 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 17 -->
+
+						<div class="product-item giyim">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="giyim aksesuar/kupa bardak.jpg" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="Kupa Bardak" data-price="40₺"
+									data-image="giyim aksesuar/kupa bardak.jpg"
+									data-description="Sabah kahveleriniz ve çay keyfiniz için özel tasarım kupa bardak.">
+									Kupa Bardak</h6>
+									<div class="product_price">40 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+						
+
+						<!-- Ürün 18 -->
+
+						<div class="product-item giyim">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="giyim aksesuar/magnet.webp" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="Magnet" data-price="15₺"
+									data-image="giyim aksesuar/magnet.webp"
+									data-description="Buzdolabınız için rengarenk tasarım magnetler.">
+									Magnet</h6>
+									<div class="product_price">15 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 19 -->
+
+						<div class="product-item giyim">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="giyim aksesuar/şapka.webp" alt="" style="width: 135px; height: auto;">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
+									<span>Yeni</span>
+								</div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="Şapka" data-price="25₺"
+									data-image="giyim aksesuar/şapka.webp" 
+									data-description="Sıcak havalarda stilinizi tamamlayacak hafif ve şık şapka.">
+									Şapka</h6>
+									<div class="product_price">25 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+
+						<!-- Ürün 20 -->
+
+						<div class="product-item giyim">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="giyim aksesuar/anahtarlık.jpg" alt="" style="width: 160px; height: auto;">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_info">
+									<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+									data-name="Anahtarlık" data-price="25₺"
+									data-image="giyim aksesuar/anahtarlık"
+									data-description="Her zaman yanınızda taşıyabileceğiniz kullanışlı ve şık anahtarlık.">
+									Anahtarlık</h6>
+									<div class="product_price">25 ₺</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- HER SAYFAYA GEREKLİ!!!!!! -->
+	<!-- Avantajlar -->
+
+	<div class="benefit">
+		<div class="container">
+			<div class="row benefit_row">
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+						<div class="benefit_content">
+							<h6>Ücretsiz Kargo</h6>
+							<p>100 ₺ üzerine ücretsiz kargo imkanı. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+						<div class="benefit_content">
+							<h6>HIZLI TESLİMAT</h6>
+							<p>En kısa sürede kargonuz evinizde.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+						<div class="benefit_content">
+							<h6>15 gün içinde iade</h6>
+							<p>15 gün içinde iade alabiliriz</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+						<div class="benefit_content">
+							<h6>haftanın her günü</h6>
+							<p>08:00 - 21:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bülten -->
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+						<h4>Bülten</h4>
+						<p>Bültenimize abone olun, ilk alışverişte %20 indirim kazanın.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form action="post">
+						<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+							<input id="newsletter_email" type="email" placeholder="Email" required="required" data-error="Valid email is required.">
+							<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Abone Ol</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Altbilgi -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer_nav_container">
+					<div class="cr">©2020 Tüm Hakları Saklıdır.   <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="#"></a>  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<!-- jQuery Slim: HTML öğeleriyle etkileşime geçmek ve olayları yönetmek için kullanılan hafif bir kütüphane -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<!-- Popper.js: Dinamik öğelerin doğru pozisyonlandırılmasını sağlar -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS: Dinamik bileşenler (modal, dropdown vb.) için gereklidir -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+ <!-- Isotope: Öğeleri filtreleme ve düzenleme için kullanılır -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script src="js/custom.js"></script>
+</body>
+
+</html>

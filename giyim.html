@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="TR">
+<head>
+<title>Giyim ve Aksesuar</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/allResponsive.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/allResponsive.css">   
+<link rel="stylesheet" type="text/css" href="styles/slider.css">   
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="icon" type="image/png" href="images/nohu.png">
+
+</head>
+
+<body>
+
+<div class="super_container">
+	<style>
+		.logo_image {
+			width: 50px;
+			height: auto;
+			margin-right: 10px;
+		}
+
+		.main_nav_container {
+			background-color: white !important;
+			/* Siyah arka planı beyaza zorlar */
+		}
+	</style>
+
+	<!-- YÖNETİM PANELİ -->
+	<header class="header trans_300" style="height: 0;">
+		<div class="main_nav_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-right">
+						<div class="logo_container">
+							<a href="index.html" style="color:black; display: flex; align-items: center;">
+								<img src="images/nohu.png" alt="NOHU Logo" class="logo_image">
+								NOHU<span>ORGANİK</span>
+							</a>
+						</div>
+						<nav class="navbar">
+							<ul class="navbar_menu" style="margin-top: -15px;">
+								<li><a href="index.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">ANASAYFA</a></li>
+								<li><a href="meyvee.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">AlIŞVERİŞ</a></li>
+								<li><a href="contact.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">İLETİŞİM</a></li>
+								<li><a href="hakkımızda.html" style="color:black; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">HAKKIMIZDA</a></li> 
+							</ul>
+							<ul class="navbar_user" style="margin-top: -15px;">
+								<li><a href="#"><i class="fa fa-search" style="color:black" aria-hidden="true"></i></a></li>
+								<li><a href="login.html"><i class="fa fa-user" style="color:black" aria-hidden="true"></i></a></li>
+								<li class="checkout">
+									<a href="card.html">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										<span id="checkout_items" class="checkout_items"></span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="fs_menu_overlay"></div>
+
+	<div class="container product_section_container">
+		<div class="row">
+			<div class="col product_section clearfix">
+            <!-- Sayfa Akışı -->
+
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li class="active"><a href="giyim.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Giyim ve Aksesuar</a></li>
+                </ul>
+            </div>
+
+            <!-- Ürün Kategorisi -->
+
+            <div class="sidebar">
+                <div class="sidebar_section">
+                    <div class="sidebar_title">
+                        <h5>Ürün Kategorisi</h5>
+                    </div>
+                    <ul class="sidebar_categories">
+                        <li><a href="meyvee.html">Meyve ve Sebze</a></li>
+                        <li><a href="gıda.html">Gıda ve Doğal Ürünler</a></li>
+                        <li class="active"><a href="giyim.html"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>Giyim ve Aksesuar</a></li>
+                        <li><a href="dekorasyon.html">Ev ve Dekorasyon</a></li>
+                    </ul>
+                </div>
+            </div>
+
+			<style>
+
+							
+				.product-item:hover {
+				  transform: translateY(-5px); /* Üzerine gelindiğinde kart yukarı kayar */
+				}
+				
+				/* Ürün resminin boyutları ve yerleşimi */
+				.product_image img {
+				  width: 100%; /* Resmin genişliği kart kadar olacak */
+				  height: 200px; /* Sabit yükseklik */
+				  object-fit: cover; /* Resmin oranı korunarak kesilmesi sağlanır */
+				}
+				
+				/* Favori simgesi konumu */
+				.favorite {
+				  position: absolute;
+				  top: 10px;
+				  left: 10px;
+				  background-color: rgba(255, 255, 255, 0.7); /* Saydam arka plan */
+				  border-radius: 50%; /* Yuvarlak simge */
+				  width: 30px;
+				  height: 30px;
+				  display: flex;
+				  justify-content: center;
+				  align-items: center;
+				  cursor: pointer;
+				}
+				
+				.favorite_left {
+				  background-color: rgba(255, 0, 0, 0.6); /* Kırmızı arka plan */
+				}
+				
+
+				
+				.product_bubble_right {
+				  right: 10px;
+				  background-color: #f44336; /* Kırmızı */
+				}
+				
+				.product_bubble_left {
+				  left: 10px;
+				  background-color: #4CAF50; /* Yeşil */
+				}
+				
+				/* Ürün bilgileri */
+				.product_info {
+				  padding: 15px;
+				  text-align: center;
+				}
+				
+				.product_name {
+				  font-size: 16px;
+				  font-weight: bold;
+				  margin-bottom: 10px;
+				  color: #333;
+				  cursor: pointer;
+				  transition: color 0.3s ease;
+				}
+				
+
+				</style>
+				<!--  İçerik -->
+
+				<div class="main_content">
+
+					<!-- Ürünler -->
+
+					<div class="products_iso">
+						<div class="row">
+							<div class="col">
+								<div class="product-grid">
+
+									<!-- Ürün 1 -->
+
+									<div class="product-item giyim">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img src="giyim aksesuar/tshirt.png" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
+												<span>Yeni</span></div>
+											<div class="product_info">
+												<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+												 data-name="Yeşil T-shirt" data-price="100₺"
+												 data-image="giyim aksesuar/tshirt.png"
+												data-description="Rahat ve şık tasarımlarla üretilmiş tişörtlerimiz">
+												Yeşil T-shirt</h6>
+												<div class="product_price">100 ₺</div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+									</div>
+
+									<!-- Ürün 2 -->
+
+									<div class="product-item giyim">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img src="giyim aksesuar/şapka.webp" alt="" style="width: 145px; height: auto;">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
+												<span>Yeni</span>
+											</div>
+											<div class="product_info">
+												<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+												data-name="Şapka" data-price="25₺"
+												data-image="giyim aksesuar/şapka.webp" 
+												data-description="Sıcak havalarda stilinizi tamamlayacak hafif ve şık şapka.">
+												Şapka</h6>
+												<div class="product_price">25 ₺</div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+									</div>
+
+									<!-- Ürün 3 -->
+
+									<div class="product-item giyim">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img src="giyim aksesuar/kupa bardak.jpg" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+												data-name="Kupa Bardak" data-price="40₺"
+												data-image="giyim aksesuar/kupa bardak.jpg"
+												data-description="Sabah kahveleriniz ve çay keyfiniz için özel tasarım kupa bardak.">
+												Kupa Bardak</h6>
+												<div class="product_price">40 ₺</div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+									</div>
+
+									<!-- Ürün 4 -->
+									<div class="product-item giyim">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img src="giyim aksesuar/anahtarlık.jpg" alt="" style="width: 160px; height: auto;">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+												data-name="Anahtarlık" data-price="25₺"
+												data-image="giyim aksesuar/anahtarlık.jpg"
+												data-description="Her zaman yanınızda taşıyabileceğiniz kullanışlı ve şık anahtarlık.">
+												Anahtarlık</h6>
+												<div class="product_price">25 ₺</div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+									</div>
+									<!--Üürn 5-->
+
+									<div class="product-item giyim ">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img src="giyim aksesuar/magnet.webp" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name" data-toggle="modal" data-target="#productModal"
+												data-name="Magnet" data-price="15₺"
+												data-image="giyim aksesuar/magnet.webp"
+												data-description="Buzdolabınız için rengarenk tasarım magnetler.">
+												Magnet</h6>
+												<div class="product_price">15 ₺</div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="card.html">Satın Al</a></div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+<!-- HER SAYFAYA GEREKLİ!!!!!! -->
+	<!-- Avantajlar -->
+
+	<div class="benefit">
+		<div class="container">
+			<div class="row benefit_row">
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+						<div class="benefit_content">
+							<h6>Ücretsiz Kargo</h6>
+							<p>100 ₺ üzerine ücretsiz kargo imkanı. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+						<div class="benefit_content">
+							<h6>HIZLI TESLİMAT</h6>
+							<p>En kısa sürede kargonuz evinizde.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+						<div class="benefit_content">
+							<h6>15 gün içinde iade</h6>
+							<p>15  gün içinde iade alabiliriz</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+						<div class="benefit_content">
+							<h6>haftanın her günü</h6>
+							<p>08:00 - 21:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bülten -->
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+						<h4>Bülten</h4>
+						<p>Bültenimize abone olun, ilk alışverişte %20 indirim kazanın.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form action="post">
+						<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+							<input id="newsletter_email" type="email" placeholder="Email" required="required" data-error="Valid email is required.">
+							<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Abone Ol</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Altbilgi -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer_nav_container">
+					<div class="cr">©2020 Tüm Hakları Saklıdır.  <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="#"></a>  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="js/categories_custom.js"></script>
+</body>
+</html>
