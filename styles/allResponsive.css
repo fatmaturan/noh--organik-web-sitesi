@@ -459,18 +459,18 @@
 		}
 	}
 	
-	/************
+	/***
 	1024px
-	************/
+	***/
 	
 	@media only screen and (max-width: 1024px)
 	{
 		
 	}
 	
-	/************
+	/*
 	991px
-	************/
+    */
 	
 	@media only screen and (max-width: 991px)
 	{
@@ -530,36 +530,36 @@
 		}
 	}
 	
-	/************
+	/*
 	959px
-	************/
+	*/
 	
 	@media only screen and (max-width: 959px)
 	{
 		
 	}
 	
-	/************
+	/*
 	880px
-	************/
+	**/
 	
 	@media only screen and (max-width: 880px)
 	{
 		
 	}
 	
-	/************
+	/*
 	768px
-	************/
+	*/
 	
 	@media only screen and (max-width: 768px)
 	{
 		
 	}
 	
-	/************
+	/*
 	767px
-	************/
+	**/
 	
 	@media only screen and (max-width: 767px)
 	{
@@ -580,9 +580,9 @@
 		}
 	}
 	
-	/************
+	/*
 	575px
-	************/
+	*/
 	
 	@media only screen and (max-width: 575px)
 	{
@@ -664,11 +664,11 @@
 		{
 			font-size: 14px !important;
 		}
-		.input_ph:-moz-placeholder /* older Firefox*/
+		.input_ph:-moz-placeholder 
 		{
 			font-size: 14px !important;
 		}
-		.input_ph::-moz-placeholder /* Firefox 19+ */ 
+		.input_ph::-moz-placeholder
 		{
 			font-size: 14px !important;
 		} 
@@ -702,27 +702,27 @@
 		}
 	}
 	
-	/************
+	/*
 	539px
-	************/
+	*/
 	
 	@media only screen and (max-width: 539px)
 	{
 		
 	}
 	
-	/************
+	/*
 	480px
-	************/
+	*/
 	
 	@media only screen and (max-width: 480px)
 	{
 		
 	}
 	
-	/************
+	/*
 	479px
-	************/
+	*/
 	
 	@media only screen and (max-width: 479px)
 	{
@@ -803,11 +803,11 @@
 		{
 			font-size: 12px !important;
 		}
-		#newsletter_email:-moz-placeholder /* older Firefox*/
+		#newsletter_email:-moz-placeholder 
 		{
 			font-size: 12px !important;
 		}
-		#newsletter_email::-moz-placeholder /* Firefox 19+ */ 
+		#newsletter_email::-moz-placeholder 
 		{
 			font-size: 12px !important;
 		} 
@@ -842,9 +842,9 @@
 		}
 	}
 	
-	/************
+	/*
 	400px
-	************/
+	*/
 	
 	@media only screen and (max-width: 400px)
 	{
@@ -1028,12 +1028,12 @@
 		font-size: 12px !important;
 		padding-left: 0px;
 	}
-	#newsletter_email:-moz-placeholder /* older Firefox*/
+	#newsletter_email:-moz-placeholder 
 	{
 		font-size: 12px !important;
 		padding-left: 0px;
 	}
-	#newsletter_email::-moz-placeholder /* Firefox 19+ */ 
+	#newsletter_email::-moz-placeholder 
 	{
 		font-size: 12px !important;
 		padding-left: 0px;
@@ -1067,9 +1067,8 @@
 	}
 }
 
-/************
-400px
-************/
+/*
+400px*/
 
 @media only screen and (max-width: 400px)
 {

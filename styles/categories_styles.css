@@ -1,14 +1,11 @@
 @charset "utf-8";
 
-/***********
+/*
 1. Fonts
-***********/
+*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
 
-/*********************************
-2. Body and some general stuff
-*********************************/
 
 *
 {
@@ -119,13 +116,13 @@ h6::selection
 	font-weight: 500;
 	color: #777777 !important;
 }
-:-moz-placeholder /* older Firefox*/
+:-moz-placeholder 
 {
 	font-size: 16px !important;
 	font-weight: 500;
 	color: #777777 !important;
 }
-::-moz-placeholder /* Firefox 19+ */
+::-moz-placeholder 
 {
 	font-size: 16px !important;
 	font-weight: 500;
@@ -220,9 +217,8 @@ section
 	overflow: hidden;
 }
 
-/*********************************
-3. Home
-*********************************/
+/*
+ Home */
 
 .header
 {
@@ -248,9 +244,6 @@ section
 	text-transform: uppercase;
 }
 
-/*********************************
-3.1 Currency
-*********************************/
 
 .currency
 {
@@ -331,9 +324,7 @@ section
 	border-bottom: none;
 }
 
-/*********************************
-3.2 Language
-*********************************/
+
 
 .language
 {
@@ -412,9 +403,7 @@ section
 	border-bottom: none;
 }
 
-/*********************************
-3.3 Account
-*********************************/
+
 
 .account
 {
@@ -495,9 +484,7 @@ section
 	margin-right: 10px;
 }
 
-/*********************************
-3.4 Main Navigation
-*********************************/
+
 
 .main_nav_container
 {
@@ -593,9 +580,9 @@ section
 	font-size: 12px;
 	color: #FFFFFF;
 }
-/*********************************
-3.6 Logo
-*********************************/
+/*
+ Logo
+*/
 
 .logo_container
 {
@@ -660,9 +647,7 @@ section
 	margin-top: 32px;
 }
 
-/*********************************
-4. Products
-*********************************/
+
 
 .products_iso
 {
@@ -694,9 +679,7 @@ section
 	content: '';
 }
 
-/*********************************
-4.1 Product Sorting
-*********************************/
+
 
 .product_sorting_container_bottom
 {
@@ -913,9 +896,7 @@ section
 	margin-right: 34px;
 }
 
-/*********************************
-5. Breadcrumbs
-*********************************/
+
 
 .breadcrumbs
 {
@@ -942,9 +923,7 @@ section
 	color: #51545f;
 }
 
-/*********************************
-6. Sidebar
-*********************************/
+
 
 .product_section_container
 {
@@ -1088,9 +1067,6 @@ section
 	margin-right: 11px;
 }
 
-/*********************************
-7. Main Content
-*********************************/
 
 .main_content
 {
@@ -1307,13 +1283,13 @@ section
 	color: #fe4c50;
 }
 
-/*********************************
-BÜTÜN SAYFALAR İÇİN GEREKLİİİİİİİİİİ
-*********************************/
+/*
+BÜTÜN SAYFALAR İÇİN GEREKLİİİİ
+*/
 
-/*********************************
+/*
 Avantajlar
-*********************************/
+*/
 
 .benefit
 {
@@ -1364,9 +1340,9 @@ Avantajlar
 	color: #51545f;
 }
 
-/*********************************
+/*
 Bülten 
-*********************************/
+*/
 
 .newsletter
 {
@@ -1416,13 +1392,13 @@ Bülten
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-#newsletter_email:-moz-placeholder /* older Firefox*/
+#newsletter_email:-moz-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-#newsletter_email::-moz-placeholder /* Firefox 19+ */
+#newsletter_email::-moz-placeholder 
 {
 	font-size: 14px !important;
 	font-weight: 400;
@@ -1456,9 +1432,9 @@ Bülten
 {
 	background: #FE7C7F;
 }
-/*********************************
+/*
 Altbilgi
-*********************************/
+*/
 
 .footer_nav_container
 {

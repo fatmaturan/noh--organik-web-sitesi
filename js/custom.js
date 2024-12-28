@@ -47,7 +47,7 @@ jQuery(document).ready(function($)
 		else
 		{
 			if($(window).scrollTop() > 100)
-			{ //###################################################### EGE --- top : 0 ve 100  olarak degistirildi
+			{ 
 				header.css({'top':"0"});
 			}
 			else
@@ -136,11 +136,11 @@ jQuery(document).ready(function($)
 
 			setInterval(function ()
 			{
-			    // find the amount of "seconds" between now and target
+			    
 			    var current_date = new Date().getTime();
 			    var seconds_left = (target_date - current_date) / 1000;
 			 
-			    // do some time calculations
+			    
 			    days = parseInt(seconds_left / 86400);
 			    seconds_left = seconds_left % 86400;
 			     
@@ -150,7 +150,7 @@ jQuery(document).ready(function($)
 			    minutes = parseInt(seconds_left / 60);
 			    seconds = parseInt(seconds_left % 60);
 
-			    // display result
+			    
 			    d.text(days);
 			    h.text(hours);
 			    m.text(minutes);

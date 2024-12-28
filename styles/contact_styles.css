@@ -1,15 +1,13 @@
 @charset "utf-8";
 
 
-/***********
+/*
 1. Fonts
-***********/
+*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
 
-/*********************************
-2. Body and some general stuff
-*********************************/
+
 
 *
 {
@@ -120,13 +118,13 @@ h6::selection
 	font-weight: 500;
 	color: #777777 !important;
 }
-:-moz-placeholder /* older Firefox*/
+:-moz-placeholder 
 {
 	font-size: 16px !important;
 	font-weight: 500;
 	color: #777777 !important;
 }
-::-moz-placeholder /* Firefox 19+ */
+::-moz-placeholder 
 {
 	font-size: 16px !important;
 	font-weight: 500;
@@ -221,9 +219,9 @@ section
 	overflow: hidden;
 }
 
-/*********************************
+/*
 3. Home
-*********************************/
+*/
 
 .header
 {
@@ -249,9 +247,7 @@ section
 	text-transform: uppercase;
 }
 
-/*********************************
-3.1 Currency
-*********************************/
+
 
 .currency
 {
@@ -332,9 +328,7 @@ section
 	border-bottom: none;
 }
 
-/*********************************
-3.2 Language
-*********************************/
+
 
 .language
 {
@@ -413,9 +407,7 @@ section
 	border-bottom: none;
 }
 
-/*********************************
-3.3 Account
-*********************************/
+
 
 .account
 {
@@ -496,9 +488,9 @@ section
 	margin-right: 10px;
 }
 
-/*********************************
-3.4 Main Navigation
-*********************************/
+/*
+ Main Navigation
+*/
 
 .main_nav_container
 {
@@ -595,9 +587,9 @@ section
 	color: #FFFFFF;
 }
 
-/*********************************
-3.6 Logo
-*********************************/
+/*
+ Logo
+*/
 
 .logo_container
 {
@@ -691,9 +683,7 @@ section
 	color: #;
 }
 
-/*********************************
-4. Breadcrumbs
-*********************************/
+
 
 .breadcrumbs
 {
@@ -720,9 +710,8 @@ section
 	color: #51545f;
 }
 
-/*********************************
-5. Google Map
-*********************************/
+/*
+5. Google Map*/
 
 .contact_container
 {
@@ -749,9 +738,8 @@ section
 	height: calc(100% + 30px);
 }
 
-/*********************************
-6. Contact Us
-*********************************/
+
+
 
 .contact_contents
 {
@@ -780,9 +768,7 @@ section
 	margin-top: 39px;
 }
 
-/*********************************
-7. Follow Us
-*********************************/
+
 
 .follow_us_contents
 {
@@ -829,9 +815,6 @@ section
 	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
 
-/*********************************
-8. Contact Form
-*********************************/
 
 .form_input
 {
@@ -880,13 +863,13 @@ section
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-.input_ph:-moz-placeholder /* older Firefox*/
+.input_ph:-moz-placeholder
 {
 	font-size: 16px !important;
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-.input_ph::-moz-placeholder /* Firefox 19+ */
+.input_ph::-moz-placeholder
 {
 	font-size: 16px !important;
 	font-weight: 400;
@@ -955,13 +938,11 @@ textarea:hover
 	cursor: pointer;
 }
 
-/*********************************
-BÜTÜN SAYFALAR İÇİN GEREKLİİİİİİİİİİ
-*********************************/
 
-/*********************************
+
+/*
 Avantajlar
-*********************************/
+*/
 
 .benefit
 {
@@ -1012,9 +993,9 @@ Avantajlar
 	color: #51545f;
 }
 
-/*********************************
+/*
 Bülten 
-*********************************/
+*/
 
 .newsletter
 {
@@ -1064,13 +1045,13 @@ Bülten
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-#newsletter_email:-moz-placeholder /* older Firefox*/
+#newsletter_email:-moz-placeholder 
 {
 	font-size: 14px !important;
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-#newsletter_email::-moz-placeholder /* Firefox 19+ */
+#newsletter_email::-moz-placeholder 
 {
 	font-size: 14px !important;
 	font-weight: 400;
@@ -1104,9 +1085,9 @@ Bülten
 {
 	background: #FE7C7F;
 }
-/*********************************
+/*
 Altbilgi
-*********************************/
+*/
 
 .footer_nav_container
 {
